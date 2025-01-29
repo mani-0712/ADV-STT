@@ -23,7 +23,6 @@ driver.get(website)
 Recog_File = f"{getcwd()}\\input.txt"
 
 def listen():
-    print("POWER BY ꧁࿇☬༒Anuj Yadav༒☬࿇꧂ || ༺TeⱥmToX𝓲C༻ || ")
     try:
         start_button = WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.ID, 'startButton')))
         start_button.click()
@@ -42,7 +41,7 @@ def listen():
                 output_text = current_text
                 with open(Recog_File, "w") as file:
                     file.write(output_text.lower())
-                    print("Anuj Yadav:", output_text)
+                    print("Krish:", output_text)
     except KeyboardInterrupt:
         pass
     except Exception as e:
