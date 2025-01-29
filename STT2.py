@@ -40,7 +40,7 @@ def listen():
                 recognized_txt = recognizer.recognize_google(audio).lower()
                 if recognized_txt:
                     translated_txt = Trans_hindi_to_english(recognized_txt)
-                    print("\r" + Fore.BLUE + "Mr Zeno : " + translated_txt)
+                    print("\r" + Fore.BLUE + "Krish : " + translated_txt)
                     return translated_txt
                 else:
                     return ""
